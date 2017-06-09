@@ -281,4 +281,7 @@ DEPRECATED_ATTRIBUTE
  */
 - (BOOL)mergeFromDictionary:(NSDictionary *)dict useKeyMapping:(BOOL)useKeyMapping error:(NSError **)error;
 
+#pragma mark - mine
+-(NSDictionary*) getClassProperties;
+
 @end

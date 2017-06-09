@@ -1384,4 +1384,11 @@ static JSONKeyMapper* globalKeyMapper = nil;
     return YES;
 }
 
+#pragma mark - mine 
+-(NSDictionary*) getClassProperties{
+    NSDictionary* classProperties = objc_getAssociatedObject(self.class, &kClassPropertiesKey);
+    return classProperties;
+}
+
+
 @end
